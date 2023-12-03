@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="DemoBlankets">
+  <grid id="27dc6" binding="MainP" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="23" y="37" width="366" height="427"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="b1e6c" class="javax.swing.JButton" binding="btnClick">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Click Me"/>
+        </properties>
+      </component>
+      <component id="4fa87" class="javax.swing.JLabel" binding="out">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="188ad" class="javax.swing.JButton" binding="clickMeForItemsButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Click Me For Items Description"/>
+        </properties>
+      </component>
+      <component id="3710c" class="javax.swing.JComboBox" binding="DropDown">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <model>
+            <item value="Size"/>
+            <item value="Twin"/>
+            <item value="Double"/>
+            <item value="Queen"/>
+            <item value="King"/>
+          </model>
+        </properties>
+      </component>
+      <component id="6fe70" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Material"/>
+            <item value="Cotton"/>
+            <item value="Wool"/>
+            <item value="Cashmere"/>
+          </model>
+        </properties>
+      </component>
+      <component id="88e3b" class="javax.swing.JLabel" binding="LtoString">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
