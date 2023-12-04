@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Objects;
 
 public class Blanket {
@@ -164,7 +165,7 @@ public class Blanket {
 
     public final void RemoveOneBlanket() {
         if (this.AmountLeft == 0) {
-            System.out.println("No more blankets left come back another day");
+            JOptionPane.showMessageDialog(null,"No more blankets left come back another day");
         } else {
             this.AmountLeft--;
         }
@@ -202,11 +203,11 @@ public class Blanket {
         for (String S : AvailableDiscount) {
             if (Objects.equals(S, Code)) {
                 this.setDiscount(10.0);
-                System.out.println("Discount Applied !");
+                JOptionPane.showMessageDialog(null,"Discount Applied !");
                 return;
             }
         }
 
-        System.out.println("Invalid Discount");
+        JOptionPane.showMessageDialog(null,"Invalid Discount");
     }
 }
