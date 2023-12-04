@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class ElectricBlanket extends Blanket
 {
     private int NumberOfHeatSettings;
@@ -10,10 +12,16 @@ public class ElectricBlanket extends Blanket
         this.NumberOfHeatSettings = 1;
     }
 
+    public ElectricBlanket(String Size, String Material) {
+        super(Size,Material);
+        this.HasAutomaticShutOff = false ;
+        this.NumberOfHeatSettings = 1;
+    }
     public void setNumberOfHeatSettings(int NumberOfHeatSettings)
     {
         if (NumberOfHeatSettings < 1 || NumberOfHeatSettings > 5)
         {
+            JOptionPane.showMessageDialog(null, "Min : 1 And Max : 5");
             this.NumberOfHeatSettings = 1;
         }
         else

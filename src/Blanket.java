@@ -192,11 +192,17 @@ public class Blanket {
     }
 
     protected void ShowAvailableMaterials() {
-        System.out.print("The available Materials are : ");
+        String word = "" ;
+        word += "The available Materials are : ";
         for (String S : this.AvailableMaterial) {
-            System.out.print(S + ", ");
+
+            word += S + ", " ;
+
         }
-        System.out.println("\b\b");
+
+        word += "\b\b";
+
+        JOptionPane.showMessageDialog(null,"<html>" + word.replace("\b", "<b>") + "</html>");
     }
 
     protected void CheckDiscountCode(String Code) {
